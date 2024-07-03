@@ -8,7 +8,6 @@ exports.apiQRCode = async (req, res) => {
         res.status(200).json({ 
             msg: base64String
         });
-
     } catch (error) {
         console.error(error);
         res.status(500).send('Server Error');
