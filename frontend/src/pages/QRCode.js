@@ -19,7 +19,7 @@ const ShowQRCode = () => {
         console.error("Error fetching data:", error);
       }
     };
-
+    
     fetchData();
   }, [BACKEND_SERVER]); 
 
@@ -28,7 +28,7 @@ const ShowQRCode = () => {
       {data.msg ? (
         <QRCodeSVG
           size={300}
-          style={{ width: '100%', height: '100%' }}
+          style={{ width: '239.48px', height: '239.48px' }}
           value={data.msg}
         />
       ) : (
