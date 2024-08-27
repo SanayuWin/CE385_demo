@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 
 // Components
-import HelloWorld from './pages/HelloWorld';
-import ShowQRCode from './pages/QRCode';
-import Graphics from './pages/Graphics';
+import HelloWorld from './pages/helloWorld';
 
 function App() {
   return (
@@ -13,8 +11,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HelloWorld />} />
-          <Route path="/qrcode" element={<ShowQRCode />} />
-          <Route path="/graphics" element={<Graphics />} />
         </Routes>
       </main>
     </Router>
