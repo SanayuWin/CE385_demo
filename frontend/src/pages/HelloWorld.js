@@ -24,7 +24,17 @@ const HelloWorld = () => {
 
   return (
     <div>
-      {data.msg ? data.msg : "Loading..."}
+      {data.length > 0 ? (
+        data.map((item) => (
+          <div key={item.row_id}>
+            <p>ID: {item.row_id}</p>
+            <p>Number: {item.num}</p>
+            <p>Name: {item.nameth}</p>
+          </div>
+        ))
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
 };
